@@ -3,6 +3,7 @@ package com.example.bunhongkim.bankcardapp;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -25,17 +26,17 @@ public class MainActivity extends AppCompatActivity {
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                Toast.makeText(getApplicationContext(),"SCHOOL", Toast.LENGTH_SHORT).show();
+                Log.d("ON PAGE","SCROLL");
             }
 
             @Override
             public void onPageSelected(int position) {
-                Toast.makeText(getApplicationContext(),"SELECT", Toast.LENGTH_SHORT).show();
+                Log.d("ON PAGE","SELECTED");
             }
 
             @Override
             public void onPageScrollStateChanged(int state) {
-                Toast.makeText(getApplicationContext(),"STATE CHANGE", Toast.LENGTH_SHORT).show();
+                Log.d("ON PAGE","SCROLL STATE CHANGE");
             }
         });
 
