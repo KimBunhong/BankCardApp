@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/tool_bar"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/btn_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-24dp"
+                android:src="@drawable/main_back_icon"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tx_tb_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="MY CARD"
+                android:gravity="center"
+                style="@style/font_toolbar"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tx_tb_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/toolbar_title"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            style="@style/font_toolbar"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

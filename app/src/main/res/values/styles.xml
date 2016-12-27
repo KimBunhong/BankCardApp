@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#F2B707</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="font_toolbar">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="biz_login">
+        <item name="android:textColor">#3e4449</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

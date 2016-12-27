@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bunhongkim.bankcardapp.MainActivity">
+
+    <include layout="@layout/tool_bar"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="112dp"
+            android:layout_height="36dp"
+            android:src="@drawable/bizplay_logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="58dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/biz_login"
+            style="@style/biz_login"
+            android:layout_marginTop="58dp"
+            android:textAlignment="center"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/biz_login_two"
+            style="@style/biz_login"
+            android:textAlignment="center"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/box_bg"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:hint="아이다"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:textColorHint="#a4a4a4"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/ed_del_text_icon"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/box_bg"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:hint="비밀번호"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:textColorHint="#a4a4a4"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/ed_del_text_icon"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="로그인"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffc107"
+            android:shadowRadius="3"
+            style="@style/font_toolbar"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:background="#b0b2b4"
+                android:text="아이디 찾기"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="320dp"
+                android:background="#b0b2b4"
+                android:layout_height="45dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:text="비밀번호 찾기"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.5dp"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/chkbox_remember"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:background="@drawable/chkbox_off_icon"
+                android:textOn=""
+                android:textOff=""/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#727577"
+                android:textSize="14sp"
+                android:layout_marginLeft="11dp"
+                android:text="자동로그인설정"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
